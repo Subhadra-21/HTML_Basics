@@ -1,0 +1,116 @@
+<div id="app">
+  <form name='form1' id='form-one' onsubmit="console.log(' inline submitted1'); return false;">
+    <h3>Form1</h3>
+    <input type='text' value='' name='firstname'/>
+    <br/>
+    <br/>
+    <select name='numbers'>
+      <option value='1'>1</option>
+      <option value='2'>2</option>
+      <option value='3'>3</option>
+    </select>
+    <input type='text' value='' name='numbers'/>
+    <!-- <input type='submit' value='submit' onclick="console.log('button clicked')"/> -->
+  </form>
+
+  <br/>
+  </br>
+  <form name='form2'>
+    <h3>Form2</h3>
+    <input type='text' value='' name='firstname'/>
+    <br/>
+    <br/>
+    <select name='numbers'>
+    <option value='1'>1</option>
+    <option value='2'>2</option>
+    <option value='3'>3</option>
+  </select>
+  </form>
+  <br/>
+  <form name='form2'>
+    <h3>Form3</h3>
+    <input type='text' value='' name='firstname'/>
+    <br/>
+    <br/>
+    <select name='numbers'>
+  <option value='1'>1</option>
+  <option value='2'>2</option>
+  <option value='3'>3</option>
+</select>
+  </form>
+  <br/>
+  <input type='button' value='Read Data' id='submitBtn' />
+</div>
+
+==============================
+<br/>
+<br/>
+
+<div id='editablelike' class='editablelike' tabindex="1">
+
+</div>
+<br/>
+<div contentEditable='true' id='editableDiv' class='editablelike' tabindex="1">
+
+</div>
+<br/>
+<br/>
+=========================read a file=============
+<!-- <iframe src="/" width=500 height=500/>
+
+<iframe src="/" width=500 height=500/> -->
+
+<input type='file' id='readFile'/>
+
+<br/>
+<br/>
+<br/>
+
+<div class='animate1' id='animate1id'>
+
+</div>
+<br/>
+<br/>
+<div class='circlediv'>
+  <button id='showCircle'>show circle</button>
+  <div class='maincircle' id='maincircleid'></div>
+</div>
+<br/>
+<br/>
+<div class='directanim'>
+
+</div>
+<br/>
+<br/>
+<img src='https://js.cx/clipart/train.gif' class='imganim' id='imganimid' />
+
+<script>
+  var time1 = 0;
+  var initleft = 10;
+  var imganimid = document.getElementById('imganimid');
+  var requestId = requestAnimationFrame(function animFrame() {
+    console.log(time1)
+    console.log('ok');
+    imganimid.style.left = initleft + 'px';
+    initleft += 10;
+    time1++;
+    console.log(time1)
+    if (time1 < 50) requestAnimationFrame(animFrame);
+  });
+</script>
+
+<canvas id='canvasid' width=300 height=300></canvas>
+<br/>
+<br/>
+
+<canvas id='canvasid1' width=300 height=300>Fallback text</canvas>
+<br/>
+<br/>
+<canvas id='myCanvas' width=300 height=300></canvas>
+<br/>
+<br/><br/>
+<br/>
+<canvas id='myCanvas1' width=300 height=300></canvas>
+<br/>
+<br/><br/>
+<br/>
